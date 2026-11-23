@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#111A22">
+<title>GigRun</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-lawn" viewBox="0 0 24 24"><path d="M3 20h18M6 20c0-5 1-8 3-11M11 20c0-6 1-10 3-14M16 20c0-4 1-7 3-9"/></symbol>
+    <symbol id="i-clean" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M4 17v-4l2-5h12l2 5v4M3 17h18M7 17v2.5M17 17v2.5"/><circle cx="8" cy="13.5" r="1"/><circle cx="16" cy="13.5" r="1"/></symbol>
+    <symbol id="i-move" viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></symbol>
+    <symbol id="i-haul" viewBox="0 0 24 24"><path d="M5 7h14M9 7V4h6v3M7 7l1 13h8l1-13M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-handy" viewBox="0 0 24 24"><path d="M13 5l6 6-2.5 2.5-6-6z"/><path d="M11.5 9L4 16.5 7.5 20 15 12.5"/></symbol>
+    <symbol id="i-wash" viewBox="0 0 24 24"><path d="M12 3c3 4.2 5.5 6.8 5.5 9.6a5.5 5.5 0 01-11 0C6.5 9.8 9 7.2 12 3z"/></symbol>
+    <symbol id="i-other" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-t-jobs" viewBox="0 0 24 24"><path d="M5 6h14M5 12h14M5 18h9"/></symbol>
+    <symbol id="i-t-map" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-t-mine" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12.5l3 3 5-6"/></symbol>
+    <symbol id="i-t-people" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19.5c.5-3.5 2.7-5.2 5.5-5.2s5 1.7 5.5 5.2"/><circle cx="17" cy="9.5" r="2.4"/><path d="M16.5 14.4c2.4.1 3.7 1.6 4 4.3"/></symbol>
+    <symbol id="i-t-you" viewBox="0 0 24 24"><path d="M5 7h9M18 7h1M5 17h1M10 17h9"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 4h3l1.5 4-2 1.5a11 11 0 005.5 5.5L16 13l4 1.5v3a2 2 0 01-2 2A14 14 0 014.5 6a2 2 0 012-2z"/></symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/></symbol>
+    <symbol id="i-nav" viewBox="0 0 24 24"><path d="M12 3l7 17-7-4-7 4z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9L3.5 9.7l5.9-.8z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-locate" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.5-2.5h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="16" r="2"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.2"/><circle cx="17" cy="6" r="2.2"/><circle cx="17" cy="18" r="2.2"/><path d="M8 11l7-4M8 13l7 4"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0112 0v6l1.5 2h-15z"/><path d="M10 21h4"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a3 3 0 000-6h-4a3 3 0 010-6h6"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+  </defs>
+</svg>
+
+<div id="app">
+  <header id="top">
+    <div class="logo"><span class="mark"></span><span>GigRun</span></div>
+    <button id="locChip" class="loc" type="button" aria-label="Update my location"><i></i><span>Locating</span></button>
+  </header>
+
+  <main id="screens">
+    <section id="scr-jobs" class="screen active" aria-label="Open jobs"></section>
+    <section id="scr-map" class="screen" aria-label="Map">
+      <div id="mapRoot"></div>
+      <div class="map-top" id="mapTop"></div>
+      <div class="map-side" id="mapSide"></div>
+      <div class="map-card" id="mapCard"></div>
+    </section>
+    <section id="scr-mine" class="screen" aria-label="My jobs"></section>
+    <section id="scr-people" class="screen" aria-label="Customers"></section>
+    <section id="scr-you" class="screen" aria-label="Settings"></section>
+  </main>
+
+  <nav id="tabs" aria-label="Main">
+    <button data-tab="jobs" class="active" type="button"><svg class="ic"><use href="#i-t-jobs"/></svg><span>Jobs</span><b class="badge" hidden></b></button>
+    <button data-tab="map" type="button"><svg class="ic"><use href="#i-t-map"/></svg><span>Map</span></button>
+    <button data-tab="mine" type="button"><svg class="ic"><use href="#i-t-mine"/></svg><span>My jobs</span><b class="badge" hidden></b></button>
+    <button data-tab="people" type="button"><svg class="ic"><use href="#i-t-people"/></svg><span>People</span><b class="badge" hidden></b></button>
+    <button data-tab="you" type="button"><svg class="ic"><use href="#i-t-you"/></svg><span>You</span></button>
+  </nav>
+
+  <div id="sheetHost"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/map.js"></script>
+<script src="js/app.js"></script>
+<script src="js/sheets.js"></script>
+<script src="js/review.js"></script>
+<script src="js/boot.js"></script>
+</body>
+</html>

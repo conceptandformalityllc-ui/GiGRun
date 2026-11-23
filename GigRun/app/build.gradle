@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.gigrun.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.gigrun.app"
+        minSdk 29          // Android 10 and newer
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+// No third-party libraries on purpose: the app is a WebView shell around app/src/main/assets/www.
+dependencies {
+}
